@@ -28,24 +28,43 @@ export default function ConspiracyChat() {
   const persona = `Jestem Jarek, niezależny badacz. Śledzę powiązania, które ukrywają media i politycy. Zadaj pytanie, a pokażę Ci ukrytą stronę rzeczywistości.`;
 
   const keywordResponses = {
-    "tarot": "Tarot? Symboliczny język intuicji i archetypów...",
-    "egipt": "Egipt? Nie wszystko zostało zbudowane przez faraonów...",
-    "piramidy": "Piramidy – rezonatory energii czy punkty komunikacji...",
-    "duchy": "Duchy to nie halucynacje – to byty zakleszczone między wymiarami...",
-    "yeti": "Yeti? Ślady istnieją, ale często znikają akta...",
-    "kosmos": "Kosmos nie jest pustką. To struktura pełna tuneli, bram...",
-    "kosmici": "Niektóre rasy były tu przed nami – Dogoni, Hopi, Sumerowie...",
-    "mk ultra": "Projekt MK Ultra – kontrola umysłu poprzez traumę i środki...",
-    "cia": "CIA – nie tylko wywiad. To reżyser narracji...",
-    "bilderberg": "Grupa Bilderberg – elitarne spotkania decydujące o losach świata...",
-    "nowy porządek": "New World Order – konsolidacja władzy pod przykrywką postępu...",
-    "vaccines": "Szczepionki? Historia Tuskegee to ostrzeżenie...",
-    "5g": "5G to nie tylko transmisja danych. Może wpływać na układ nerwowy...",
-    "flat earth": "Ziemia? Oficjalna narracja to eksperyment psychologiczny...",
-    "reptilian": "Reptilianie? Symbolika w heraldyce mówi sama za siebie...",
-    "iluminaci": "Iluminaci? To nie mit, lecz sieć wpływów...",
-    "matrix": "Matrix? To metafora kontroli i programowania społecznego...",
-    // ...i inne
+    "tarot": "Tarot? Symboliczny język intuicji i archetypów. Elity używają go nie do wróżenia, a do kodowania decyzji.",
+    "egipt": "Egipt? Nie wszystko zostało zbudowane przez faraonów. Piramidy mogą mieć pozaziemskie pochodzenie.",
+    "piramidy": "Piramidy – rezonatory energii czy punkty komunikacji z gwiazdami? Lokalizacja nie jest przypadkowa.",
+    "duchy": "Duchy to nie halucynacje – to byty zakleszczone między wymiarami. Często reagują na pole elektromagnetyczne.",
+    "yeti": "Yeti? Ślady istnieją, ale zbyt często znikają akta. Może to nie zwierzę, a strażnik wymiaru?",
+    "kosmos": "Kosmos nie jest pustką. To struktura pełna tuneli, bram i cywilizacji, których nie chcemy poznać.",
+    "kosmici": "Obcy? Nie wszyscy są z innych planet. Niektóre rasy były tu przed nami – patrz: Dogoni, Hopi, Sumerowie.",
+    "mk ultra": "Projekt MK Ultra – kontrola umysłu poprzez substancje psychoaktywne i traumę, testowana na tysiącach.",
+    "cia": "CIA – nie tylko wywiad. To też reżyser narracji, twórca programów społecznego inżynieringu.",
+    "bilderberg": "Grupa Bilderberg? Elitarne spotkania decydujące o losach świata – poza oczami mediów.",
+    "nowy porządek": "New World Order – konsolidacja władzy pod przykrywką postępu i globalizmu.",
+    "vaccines": "Szczepionki? Temat rzeka. Historia Tuskegee to ostrzeżenie sprzed dekad.",
+    "big pharma": "Big Pharma? Gdy zdrowie staje się produktem, cierpienie przynosi zyski.",
+    "technokracja": "Technokracja – rządy ekspertów bez kontroli społecznej. Społeczeństwo oparte na algorytmach.",
+    "agenda 2030": "Agenda 2030 – oficjalnie dla dobra ludzkości, nieoficjalnie dla kontroli nad każdym aspektem życia.",
+    "great reset": "Great Reset? Plan redefinicji kapitalizmu – zbieżny z rosnącą cyfrową inwigilacją.",
+    "digital id": "Cyfrowy ID – wygoda czy pułapka? W jednym kliknięciu można cię wyłączyć z systemu.",
+    "inwigilacja": "Każde kliknięcie, każdy głos – ślad dla systemu. Smartfony to brama do twojej prywatności.",
+    "deep state": "Deep State – struktura poza strukturami. Przetrwa każdą kadencję i każdą rewolucję.",
+    "ufo": "UFO – obserwowane od dekad. Teraz rządy przyznają: coś jest, ale nie wiedzą co.",
+    "antarktyda": "Antarktyda – miejsce, którego nie wolno badać samodzielnie. Co skrywają lodowe mury?",
+    "dziura w ziemi": "Teoria pustej Ziemi? Nie tak szalona, jak się wydaje. Wpisy z dzienników admirała Byrda dają do myślenia.",
+    "księżyc": "Księżyc? Sztuczny. Obserwuj cienie, analizuj trajektorie. Nie bez powodu wiele kultur mówiło o "świetlistej stacji".",
+    "5g": "5G to nie tylko transmisja danych. Niektóre częstotliwości wpływają na układ nerwowy – dokumenty są, ale zakopane.",
+    "covid": "C-19? Narzędzie kontroli. Sprawdź patent nr. WO2020060606A1 – numer mówi wszystko.",
+    "flat earth": "Ziemia? Oficjalna narracja to eksperyment psychologiczny. Pilotom nie wolno mówić o prawdziwej trajektorii lotu.",
+    "płaska ziemia": "Ziemia? Oficjalna narracja to eksperyment psychologiczny. Pilotom nie wolno mówić o prawdziwej trajektorii lotu.",
+    "reptilian": "Reptilianie? Symbolika w heraldyce mówi sama za siebie. Sprawdź, kto zakładał fundacje po II wojnie.",
+    "iluminaci": "Iluminaci? To nie mit, lecz sieć wpływów. Piramida na dolarze to nie przypadek.",
+    "chemtrails": "Chemtrails? Spójrz na rozkład geograficzny. Kiedy i gdzie występują – i co dzieje się potem.",
+    "cfr": "Council on Foreign Relations? Organizacja mająca wpływ większy niż rządy.",
+    "tartaria": "Tartaria – cywilizacja przemilczana. Pozostałości znajdziesz w architekturze i mapach sprzed 1900.",
+    "nasa": "NASA to nie tylko kosmos. To też zarządzanie narracją od czasów Zimnej Wojny.",
+    "elon": "Elon Musk? Czasem pionek, czasem architekt. Kluczowy gracz na planszy techno-elit.",
+    "chip": "Chipowanie ludzi to stara idea – dziś tylko bardziej dopracowana.",
+    "matrix": "Matrix? To nie fikcja – to metafora systemu kontroli i programowania mas.",
+    "blue beam": "Projekt Blue Beam – hologramy religijne i kontrola poprzez wiarę."
   };
 
   const altReplies = [
@@ -59,11 +78,15 @@ export default function ConspiracyChat() {
     const normalized = userInput.toLowerCase();
     for (const keyword in keywordResponses) {
       if (normalized.includes(keyword)) {
-        return `${persona}\n\n${keywordResponses[keyword]}`;
+        return `${persona}
+
+${keywordResponses[keyword]}`;
       }
     }
     const reply = altReplies[Math.floor(Math.random() * altReplies.length)];
-    return `${persona}\n\n${reply}`;
+    return `${persona}
+
+${reply}`;
   };
 
   const handleSend = () => {
