@@ -50,7 +50,7 @@ export default function ConspiracyChat() {
     "ufo": "UFO – obserwowane od dekad. Teraz rządy przyznają: coś jest, ale nie wiedzą co.",
     "antarktyda": "Antarktyda – miejsce, którego nie wolno badać samodzielnie. Co skrywają lodowe mury?",
     "dziura w ziemi": "Teoria pustej Ziemi? Nie tak szalona, jak się wydaje. Wpisy z dzienników admirała Byrda dają do myślenia.",
-    "księżyc": "Księżyc? Sztuczny. Obserwuj cienie, analizuj trajektorie. Nie bez powodu wiele kultur mówiło o \\\"świetlistej stacji\\\".",
+    "księżyc": "Księżyc? Sztuczny. Obserwuj cienie, analizuj trajektorie. Nie bez powodu wiele kultur mówiło o świetlistej stacji.",
     "5g": "5G to nie tylko transmisja danych. Niektóre częstotliwości wpływają na układ nerwowy – dokumenty są, ale zakopane.",
     "covid": "C-19? Narzędzie kontroli. Sprawdź patent nr. WO2020060606A1 – numer mówi wszystko.",
     "flat earth": "Ziemia? Oficjalna narracja to eksperyment psychologiczny. Pilotom nie wolno mówić o prawdziwej trajektorii lotu.",
